@@ -74,9 +74,6 @@ app.put('/api/persons/:id',(request, response) => {
             error: 'object not found'
         })
     }
-    console.log('Current person: ', currentPerson);
-    console.log('ID: ', id);
-    console.log('Object: ', request.body);
     persons = persons.map(person => person.id === currentPerson.id ? currentPerson : person);
     response.json(currentPerson);
 })
