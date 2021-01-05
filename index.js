@@ -9,6 +9,7 @@ morgan.token('post-body', (request)  => {
 })
 app.use(morgan(':method :url :status :total-time - :response-time ms :post-body'))
 app.use(cors())
+app.use(express.static('build'))
 const PORT = process.env.PORT || 3001
 
 let persons = [
@@ -61,13 +62,27 @@ app.get('/api/persons/:id', (request, response) => {
 app.delete('/api/persons/:id', (request, response) => {
     const id = Number(request.params.id)
     persons = persons.filter(person => person.id !== id)
-    console.log(persons)
     response.status(204).end();
+})
+
+app.put('/api/persons/:id',(request, response) => {
+    const id = Number(request.params.id);
+    const findedPerson = persons.find(person => person.id === id);
+    let currentPerson = request.body;
+    if (!findedPerson) {
+        return response.status(400).json({
+            error: 'object not found'
+        })
+    }
+    console.log('Current person: ', currentPerson);
+    console.log('ID: ', id);
+    console.log('Object: ', request.body);
+    persons = persons.map(person => person.id === currentPerson.id ? currentPerson : person);
+    response.json(currentPerson);
 })
 
 app.post('/api/persons/', (request, response) => {
     const body = request.body
-
     if (!body.name || !body.number) {
         return response.status(400).json({
             error: `name: ${body.name} or number: ${body.number} missing`
@@ -83,14 +98,13 @@ app.post('/api/persons/', (request, response) => {
     }
 
     const person = {
+        id: Math.floor(Math.random() * Math.floor(9999)),
         name: body.name,
-        number: body.number,
-        id: Math.floor(Math.random() * Math.floor(9999))
+        number: body.number
     }
 
     persons = persons.concat(person)
-
-    response.json(persons)
+    response.json(person)
 })
 
 
