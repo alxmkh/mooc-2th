@@ -1,13 +1,13 @@
 const mongoose = require('mongoose')
 require('dotenv').config()
-const uniqueValidator = require('mongoose-unique-validator');
+const uniqueValidator = require('mongoose-unique-validator')
 
 const url = process.env.MONGODB_URI
 
 console.log('connecting to', url)
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
-    .then(result => {
+    .then(() => {
         console.log('connected to MongoDB')
     })
     .catch((error) => {
@@ -28,7 +28,7 @@ const phoneBookSchema = new mongoose.Schema({
     },
 })
 
-phoneBookSchema.plugin(uniqueValidator);
+phoneBookSchema.plugin(uniqueValidator)
 
 phoneBookSchema.set('toJSON', {
     transform: (document, returnedObject) => {

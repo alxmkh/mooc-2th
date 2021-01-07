@@ -10,7 +10,8 @@
     "build:ui": "rm -rf build && cd ../mooc/part2/phonebook/ && npm run build --prod && cp -r build ../../../mooc-2th",
     "deploy": "git push heroku main",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy",
-    "logs:prod": "heroku logs --tail"
+    "logs:prod": "heroku logs --tail",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/alxmkh/mooc-2th#readme",
   "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-plugin-react": "^7.22.0",
     "nodemon": "^2.0.6"
   },
   "dependencies": {
