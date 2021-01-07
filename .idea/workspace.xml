@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78dfde93-05fb-4c9d-a684-60ffe1759799" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/models/person.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.logs:prod">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build:ui" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -104,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.logs:prod" />
-        <item itemvalue="npm.deploy:full" />
-        <item itemvalue="npm.deploy" />
-        <item itemvalue="npm.build:ui" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build:ui" />
+        <item itemvalue="npm.deploy:full" />
+        <item itemvalue="npm.logs:prod" />
+        <item itemvalue="npm.deploy" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609761977884</updated>
       <workItem from="1609761979160" duration="23000" />
-      <workItem from="1609762070495" duration="24005000" />
+      <workItem from="1609762070495" duration="41507000" />
     </task>
     <servers />
   </component>
@@ -140,25 +143,29 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1659" height="290" key="GridCell.Tab.0.bottom" timestamp="1609860268617">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1899" height="290" key="GridCell.Tab.0.bottom" timestamp="1610034277485">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1659" height="290" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1609860268617" />
+    <state width="1659" height="290" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1609863689778" />
+    <state width="1899" height="290" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1610034277485" />
     <state width="1659" height="290" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.0.1680.1050@0.0.1680.1050" timestamp="1609842427239" />
-    <state width="1659" height="290" key="GridCell.Tab.0.center" timestamp="1609860268615">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1899" height="290" key="GridCell.Tab.0.center" timestamp="1610034277483">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1659" height="290" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1609860268615" />
+    <state width="1659" height="290" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1609863689775" />
+    <state width="1899" height="290" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1610034277483" />
     <state width="1659" height="290" key="GridCell.Tab.0.center/1680.25.1920.1055/0.0.1680.1050@0.0.1680.1050" timestamp="1609842427237" />
-    <state width="1659" height="290" key="GridCell.Tab.0.left" timestamp="1609860268613">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1899" height="290" key="GridCell.Tab.0.left" timestamp="1610034277481">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1659" height="290" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1609860268613" />
+    <state width="1659" height="290" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1609863689774" />
+    <state width="1899" height="290" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1610034277481" />
     <state width="1659" height="290" key="GridCell.Tab.0.left/1680.25.1920.1055/0.0.1680.1050@0.0.1680.1050" timestamp="1609842427235" />
-    <state width="1659" height="290" key="GridCell.Tab.0.right" timestamp="1609860268616">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1899" height="290" key="GridCell.Tab.0.right" timestamp="1610034277484">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1659" height="290" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1609860268616" />
+    <state width="1659" height="290" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1609863689777" />
+    <state width="1899" height="290" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1610034277484" />
     <state width="1659" height="290" key="GridCell.Tab.0.right/1680.25.1920.1055/0.0.1680.1050@0.0.1680.1050" timestamp="1609842427238" />
   </component>
 </project>
